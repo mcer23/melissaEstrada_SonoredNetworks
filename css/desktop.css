@@ -1,0 +1,193 @@
+:root{
+    --background:#E4F7FF;
+    --menu:#92DCFF;
+    --blueSonored:#24B8FE;
+    --font:#0F4965;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto',sans-serif;
+    background-color: var(--background);
+    color:var(--font);
+}
+
+@media(min-width: 1024px){
+    h1{
+        margin-top: 10px;
+        font-size: 2.8rem;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-header-menu{
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-link{
+        color:var(--font);
+    }
+    a:hover{
+        font-weight: 600;
+    }
+
+    /* ******** Index ************ */
+    .index--main{
+        height: 600px;
+        background-color: var(--background);
+    }
+    .body-main-img-beneficios{
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 487px;
+    }
+    .body-main--img img{
+        margin-top:75px;
+        margin-left: 75px;
+        width:457px;
+    }
+    .body-main--beneficios h1{
+        width:426px;
+        margin-top:75px;
+        font-size: 2.8rem;
+    }
+    .body-main--beneficios ul{
+      font-size: 1.8rem;
+      margin-top:26px;
+      margin-bottom: 25px;
+      line-height: 21.09px;
+    }
+    .body-main--contenedor h2{
+        font-size:2rem ;
+        line-height: 28.13px;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+    .main--container-svg-plan p{
+        font-style: 1.6rem;
+        line-height: 16.41px;
+    }
+
+    /* ***************** Planes ****************** */
+    .main--planes{
+        height: 487px;
+    }
+
+    .main-subtitle{
+        margin-top: 10px;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .planes--main-planes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .planes--contenedor{
+        height: 180px;
+        margin-bottom: 50px;
+    }
+    .card-header{
+        font-size: 2.4rem;
+    }
+    .light{
+        font-size: 2rem;
+        line-height: 25px;
+    }
+    .bold{
+        font-size: 2rem;
+        line-height: 25px;
+    }
+    .contratar{
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 10px;
+    }
+/* ****************** Promo ************************* */
+    /* En Footer utilice este proceso y funcionó */
+    /* .promo--desktop{
+        display: grid;
+        grid-template-columns: auto auto;
+    } */
+    /* En Planes utilice este proceso y funcionó */
+    .promo--desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+/* *************** Contacto ************************ */
+    .main--forms{
+        height: 487px;
+    }
+    .contacto--extra{
+        font-size: 1.8rem;
+    }
+    .contacto--forms{
+        margin-left: 400px;
+    }
+    .contacto--forms-input{
+        font-size: 1.4rem;
+    }
+    .button--submit{
+        /* margin-left: 50px; */
+        font-size:2rem ;
+    }
+/* **************** Inicio de sesión *********************** */
+    .iDS--inputs{
+        height: 487px;
+        width:80%; 
+    }
+    .iDS--inputs h1{
+        margin-left: 200px;
+    }
+    .iDS--forms{
+        margin-left: 200px;
+    }
+    .ingresar{
+        margin-left: 230px;
+        font-size: 2rem;
+    }
+    .label-titulo{
+        font-size: 1.8rem;
+    }
+    .password{
+        font-size: 1.4rem;
+    }
+/* *************** Footer ******************* */
+    footer{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .footer--info{
+        font-size: 1.7rem;
+        color:var(--font);
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        width:100%;
+    }
+    .footer--redes p{
+        font-size: 1.8rem;
+        color:var(--font);
+        margin-bottom: 12px;
+    }
+
+    .footer--avisos p{
+        font-size: 1.8rem;
+        color:var(--font);
+        margin-top:30px;
+    }
+    .LogoSonoredOriginal{
+        display: flex;
+        max-width: 102px;
+        margin: 27px 68px 35px 150px;
+    }
+  
+}
