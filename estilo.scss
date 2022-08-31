@@ -1,0 +1,57 @@
+@import"_variables";
+nav{
+    background-color: $menu;
+
+}
+body{
+    h1{
+        color:$font;
+        font-size: $font-size;
+        text-align: $center;
+    }
+    ul{
+        color:$font;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        list-style: none;
+    }
+    h2{
+        color:$font;
+        font-size: $font-size;
+        text-align: $center;
+    }
+    img{
+        margin:8px;
+        display:grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 17px;
+    }
+}
+
+footer{
+    position: relative;
+    width: 100vw;
+    min-width:320px;
+    max-width: 1280px;
+    bottom:0;
+    height: auto;
+    display: grid;
+    background-color: $menu;
+    grid-template-rows: auto auto;
+    p{
+        margin-top: 8px;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 9.38px;
+        text-align: center;
+        color:$font;
+    }
+    a{
+        color:$font;
+    }
+    &hover{
+        color:$blueSonored;
+    }
+}
