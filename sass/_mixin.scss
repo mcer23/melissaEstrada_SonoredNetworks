@@ -1,0 +1,8 @@
+@mixin botonContratar($fSize,$marginBottom){
+    font-size:$fSize ;
+    margin-bottom: $marginBottom;
+    
+}
+.contratar{
+    @include botonContratar(2rem, 80px)
+}
