@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Realiza el pago de tu estado de cuenta.">
     <meta name="keywords" content="internet inalambrico, wifi, planes de internet, hermosillo, sonora, sonored, sonored networks, plan, intenet ilimitado, contratar internet, mejor internet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-    <title>Contacto</title>
+    <title>Ingreso</title>
     <!-- CSS bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    
       <!-- SASS -->
       <link rel="stylesheet" href="../sass/mobile.css">
       <link rel="stylesheet" href="../sass/desktop.css">
@@ -48,22 +47,24 @@
         </div>
       </nav>
 </header>
-<main class="main--forms">
-      <h1>Contacto</h1>
-      <h2 class="main-subtitle">Dejanos tus datos para comunicarnos contigo a la brevedad.</h2>
-      <p class="contacto--extra">La información marcada con (*) es obligatoria de llenar</p>
-      <form class="contacto--forms">
-            <label for="name">Nombre completo* </label>
-            <input id="name" type="text" placeholder="Nombre completo*" class="contacto--forms-input" required>
-            <label for="phone">Teléfono*</label>
-            <input id="phone" type="number" placeholder="Teléfono*" min="10" maxlength="10" class="contacto--forms-input" required>
-            <label for="address">Colonia*</label>
-            <input id="address" type="text" placeholder="Colonia*" class="contacto--forms-input" required>
-            <label for="comments">Comentarios</label>
-            <input id="comments" type="text" placeholder="Comentarios" maxlength="100" class="contacto--forms-input comentarios">
-            <button id="submitButton" type="submit" class="button--submit">Enviar</button>
+
+<main class="iDS--inputs">
+  <h1>Inicia sesión</h1>
+    <form class="iDS--forms">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label label-titulo">Número de cuenta</label>
+        <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3 iDS--contra">
+        <label for="exampleInputPassword1" class="form-label label-titulo">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+        <a href="#" class="password">¿Olvidó su contraseña?</a>
+      </div>
+      </div>
+      <button type="submit" class="btn ingresar">Ingresar</button>
     </form>
 </main>
+
 <footer class="footer-grid">
     <div class="footer-left">
         <p class="footer--info">Somos proveedores de servicio de internet inalámbrico e ilimitado en Hermosillo, Son.</p>

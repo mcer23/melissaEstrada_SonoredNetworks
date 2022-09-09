@@ -1,8 +1,53 @@
-@mixin botonContratar($fSize,$marginBottom){
-    font-size:$fSize ;
-    margin-bottom: $marginBottom;
+//mobile
+@mixin mobileDisGrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+@mixin mobTitleSize{
+    font-size: 1.4rem;
+    line-height: 21.09px;
+    font-weight: 600;
+    font-family: 'Roboto',sans-serif;
+}
+@mixin mobSubTitleSize{
+    font-size: 1.2rem;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Roboto',sans-serif;
+}
+
+//desktop
+@mixin displayFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+@mixin displayGridColumns{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+@mixin displayGridRows{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+@mixin titleSize{
+    font-family: 'Roboto';
+    font-size: 2rem;
+    line-height: 33px;
+    text-align: center;
+
+}
+@mixin subTitleSize{
+    font-family: 'Roboto';
+    font-size: 1.8rem;
+    line-height: 45px;
+    text-align: center;
+}
+@mixin h2TitleSize {
+    font-size:2rem ;
+    line-height: 28.13px;
+    text-align: center;
     
 }
-.contratar{
-    @include botonContratar(2rem, 80px)
-}
+

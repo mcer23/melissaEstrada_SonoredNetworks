@@ -12,19 +12,20 @@
     <title>Promociones</title>
     <!-- CSS bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/mobile.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
-     <link rel="stylesheet" href="../css/desktop.css">
+      <!-- SASS -->
+    <link rel="stylesheet" href="../sass/mobile.css">
+    <link rel="stylesheet" href="../sass/desktop.css">
     <link rel="shortcut icon" href="../multimedia/img/group 78.svg" type="image/x-icon">
 </head>
 <body>
   <header class="header-menu">
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid header-nav-menu">
-          <span><a class="navbar-brand header-menu-logo" href="..//index.html"><img src="../multimedia/img/sonored horizontal-02 1.svg" alt="logoSonoredHorizontal" ></a></span>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <span><a class="navbar-brand header-menu-logo" href="../index.html"><img src="../multimedia/img/sonored horizontal-02 1.svg" alt="logoSonoredHorizontal" ></a></span>
+          <button class="navbar-toggler navbar_icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar_icon"></span>
           </button>
           <div class="collapse navbar-collapse menu-header-menu" id="navbarNav">
             <ul class="navbar-nav text-end">
@@ -32,22 +33,22 @@
                 <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="planes.html">Planes</a>
+                <a class="nav-link" href="./planes.html">Planes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../html/promociones.html">Promociones</a>
+                <a class="nav-link" href="./promociones.html">Promociones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="../html/contacto.html"">Contacto</a>
+                <a class="nav-link " href="./contacto.html"">Contacto</a>
               </li>
             </ul>
             <span class="nav-item inicioDeSesion">
-              <a class="nav-link " href="../html/inicioDeSesion.html""><img src="../multimedia/svg/inicio.svg" alt="icono de usuario para inicioDeSesion"></a>
+              <a class="nav-link " href="./iniciodesesion.html""><img src="../multimedia/svg/inicio.svg" alt="icono de usuario para inicioDeSesion"></a>
             </span>
           </div>
         </div>
       </nav>
-</header>
+  </header>
   <main>
         <h1>Promociones</h1>
         <p class="main-subtitle">Más costo de instalación de $499</p>
@@ -61,7 +62,7 @@
           </div>
           <button class="agregar" type="submit">Agregar</button>
         </div>
-        <aside class="promo--desktop">
+        <div class="promo--desktop">
           <div data-aos="fade-left"  class="card promo--contenedor">
             <img src="../multimedia/img/camaraDeSeg.png" alt="Vigila tu hogar 24/7">
             <div class="card-body promo--texto">
@@ -70,7 +71,7 @@
             </div>
           </div>
             <button class="agregar" type="submit">Agregar</button>
-        </aside>
+        </div>
     </main>
     <footer class="footer-grid">
       <div class="footer-left">
