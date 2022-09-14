@@ -1,7 +1,548 @@
-@media(min-width: 1024px){
-@import "maps";
-@import"extend";
-@import "mixin";
+@import "variables";
 
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    background-color: $background;
+    max-width: 320px;
+    /* height: 568px;     */
+    display: grid;
+    font-size: 62.5%;
+    font-family: 'Roboto',sans-serif;
+    color:$font;
+}
+/* ************* MOBILE 320px ************* */
+    nav{
+        position: sticky;
+        width:100%;
+        background-color:$menu;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 1.8rem;
+    }
+    .inicioDeSesion{
+        width:100%;
+        min-width:10px;
+        max-width: 40px;
+    }
+    .header-menu-logo{
+        width:100%;
+        min-width: 113px;
+        max-width: 239px;
+        padding-top: 6px;
+    }
+    .navbar-toggler{
+        font-size: 1.8rem;
+        line-height: 1;
+        background-color: transparent;
+        border: none;
+        /* border-radius: var(--bs-navbar-toggler-border-radius);
+        transition: var(--bs-navbar-toggler-transition); */
+    }
+    .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 110%;
+    }
+    /* Index BODY */
+    body{
+        position: absolute;
+        background-color: $background;
+    }
 
+    .body-main--img img{
+        width:320px;
+        border-radius: none;
+    }
+    .body-main--columnLeft h1{
+        color:$font;
+        display: flex;
+        width:274px;
+        font-size: 1.8rem;
+        line-height: 21px;
+        font-weight: 600;
+        text-align: center;
+        margin-left: 23px;
+        margin-top: 2px;
+    }
+    .body-main--beneficios ul{
+        color:$font;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        list-style: none;
+        width:100%;
+        min-width: 281px;
+        max-height: 426px;
+        height:39px ;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 14.06px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .body-main--contenedor h2{
+        color:$font;
+        display: flex;
+        width:100%;
+        min-width:265px;
+        max-width: 426px;
+        height: 32px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 16.41px;
+        text-align: center;
+        justify-content: center;
+    }
+    .body-main--contenedor-iconos{
+        margin:8px;
+        display:grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 17px;
+    }
+    .body-main--contenedor-iconos img{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .body-main--contenedor-iconos p{
+        display: flex;
+        flex-wrap: wrap;
+        color:$font;
+        font-size:1rem;
+        line-height: 11.72px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    /* ********** Planes ************ */
+    h1{
+        font-family: 'Roboto',sans-serif;
+        font-size: 1.8rem;
+        line-height: 21.09px;
+        font-weight: 600;
+        text-align: center;
+        color:$font;
+    }
+    .main-subtitle{
+        font-family: 'Roboto',sans-serif;
+        font-size: 1.2rem;
+        line-height: 14.06px;
+        font-weight: 400;
+        text-align: center;
+        color:$font;
+    }
+    .planes--contenedor{
+        display: flex;
+        margin-left: 80px;
+        margin-bottom: 40px;
+        width: 154px;
+        max-width:228px;
+        height: 170px;
+        background-color: transparent;
+        font-family: 'Roboto',sans-serif;
+        text-align: center;
+        border: 1px solid #DAECF4;
+        border-radius: 23px;
+    }
+    .card-header{
+        background-color:$blueSonored;
+        color:#fff;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 21.09px;
+        text-align: center;
+        border-radius:23px ;
+    }
+    .light{
+        font-family: 'Roboto',sans-serif;
+        color:$font;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 21.09px;
+    }
+    .bold{
+        font-family: 'Roboto',sans-serif;
+        color:$font;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 21.09px;
+    }
+    .contratar{
+        display: inline-block;
+        width:148px;
+        max-width:280px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        /* margin-left: 5px; */
+        background-color:$blueSonored;
+        color:$background;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 21.09px;
+        text-align: center;
+        border: none;
+        border-radius: 18px;
+    }
+
+    /* *********** Promociones ************ */
+    .promo--contenedor{
+        display: flex;
+        width:228px;
+        max-width: 300px;
+        background-color: transparent;
+        border: 1px solid #DAECF4;
+        font-family: 'Roboto',sans-serif;
+        text-align: center;
+        border-radius: 23px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+
+    }
+    .promo--contenedor img{
+        border-radius: 23px 23px 0 0;
+    }
+    .promo--texto h5{
+        font-family: 'Roboto',sans-serif;
+        font-size: 1.6rem;
+        line-height: 21.09px;
+        font-weight: 700;
+        text-align: center;
+        color:$font;
+    }
+    .promo--texto p{
+        font-family: 'Roboto',sans-serif;
+        font-size: 1.2rem;
+        line-height: 21.09px;
+        font-weight: 400;
+        text-align: center;
+        color:$font;
+    }
+    .agregar{
+        display: inline-block;
+        width:148px;
+        max-width:280px;
+        /* margin-top: 10px; */
+        margin-bottom: 30px;
+        margin-left: 75px;
+        background-color:$blueSonored;
+        color:$background;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 21.09px;
+        text-align: center;
+        border: none;
+        border-radius: 18px;
+    }
+/* ************ Contacto ************** */
+    .contacto--extra{
+        font-family: 'Roboto',sans-serif;
+        font-size: 1.2rem;
+        line-height: 21.09px;
+        font-weight: 400;
+        text-align: center;
+        color:$font;
+        font-style: italic;
+    }
+    .main--forms{
+        height: 300px;
+    }
+    .contacto--forms {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25% 25% 25% 25%;
+        margin-left: 12%;
+    }
+    .contacto--forms-input{
+        width:100%;
+        min-width:100px;
+        max-width: 228px;
+        font-family: 'Roboto',sans-serif;
+        font-size: 1rem;
+        border: 1px solid lightslategray;
+    }
+    .button--submit{
+        display: inline-block;
+        width:148px;
+        max-width:280px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 15%;
+        background-color: $blueSonored;
+        color:$background;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 21.09px;
+        text-align: center;
+        border: none;
+        border-radius: 18px;
+    }
+/* *********** Inicio de sesión ************** */
+    .iDS--inputs{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .iDS--forms{
+        height: 300px;
+    }
+    .ingresar{
+        display: inline-block;
+        width:148px;
+        max-width:280px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 25%;
+        background-color: $blueSonored;
+        color:$background;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 21.09px;
+        text-align: center;
+        border: none;
+        border-radius: 18px;
+    } 
+    .label-titulo{
+        font-family: 'Roboto',sans-serif;
+        font-size: 1.2rem;
+        line-height: 21.09px;
+        font-weight: 400;
+        text-align: center;
+        color:$font;
+    }   
+    .iDS--contra a{
+        color:$font;
+    }
+
+    /* ****** Footer ******+ */
+    footer{
+        position: relative;
+        width: 100vw;
+        min-width:320px;
+        max-width: 1280px;
+        bottom:0;
+        height: auto;
+        display: grid;
+        background-color:$menu;
+        grid-template-rows: auto auto;
+
+    }
+    .footer--info{
+        margin-top: 8px;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 9.38px;
+        text-align: center;
+        color:$font;
+    }
+    .footer--redes p {
+        margin-top: 8px;
+        font-size: 1rem;
+        line-height: 9.38px;
+        text-align: center;
+    }
+    .footer--avisos{
+        margin-top: 3px;
+        font-size: 1rem;
+        line-height: 9.38px;
+        text-align: center;
+        
+    }
+    .footer--avisos a{
+        color:$font;
+    }
+    .footer--redes-iconos{
+        margin-top: 3px;
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .LogoSonoredOriginal{
+        display: flex;
+        margin-top: 3px;
+        width:100%;
+        min-width:60px;
+        max-width:102px;
+        margin-left: 120px;
+        margin-bottom: 10px;
+    }
+@media (min-width:1024px){
+    h1{
+        margin-top: 10px;
+        font-size: 2.8rem;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-header-menu{
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-link{
+        color:$font;
+    }
+    a:hover{
+        font-weight: 600;
+    }
+
+    /* ******** Index ************ */
+    .index--main{
+        height: 600px;
+        background-color:$background;
+    }
+    .body-main-img-beneficios{
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 487px;
+    }
+    .body-main--img img{
+        margin-top:75px;
+        margin-left: 75px;
+        width:457px;
+    }
+    .body-main--beneficios h1{
+        width:426px;
+        margin-top:75px;
+        font-size: 2.8rem;
+    }
+    .body-main--beneficios ul{
+      font-size: 1.8rem;
+      margin-top:26px;
+      margin-bottom: 25px;
+      line-height: 21.09px;
+    }
+    .body-main--contenedor h2{
+        font-size:2rem ;
+        line-height: 28.13px;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+    .main--container-svg-plan p{
+        font-style: 1.6rem;
+        line-height: 16.41px;
+    }
+
+    /* ***************** Planes ****************** */
+    .main--planes{
+        height: 487px;
+    }
+
+    .main-subtitle{
+        margin-top: 10px;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .planes--main-planes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .planes--contenedor{
+        height: 180px;
+        margin-bottom: 50px;
+    }
+    .card-header{
+        font-size: 2.4rem;
+    }
+    .light{
+        font-size: 2rem;
+        line-height: 25px;
+    }
+    .bold{
+        font-size: 2rem;
+        line-height: 25px;
+    }
+    .contratar{
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 10px;
+    }
+/* ****************** Promo ************************* */
+    /* En Footer utilice este proceso y funcionó */
+    /* .promo--desktop{
+        display: grid;
+        grid-template-columns: auto auto;
+    } */
+    /* En Planes utilice este proceso y funcionó */
+    .promo--desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+/* *************** Contacto ************************ */
+    .main--forms{
+        height: 487px;
+    }
+    .contacto--extra{
+        font-size: 1.8rem;
+    }
+    .contacto--forms{
+        margin-left: 400px;
+    }
+    .contacto--forms-input{
+        font-size: 1.4rem;
+    }
+    .button--submit{
+        /* margin-left: 50px; */
+        font-size:2rem ;
+    }
+/* **************** Inicio de sesión *********************** */
+    .iDS--inputs{
+        height: 487px;
+        width:80%; 
+    }
+    .iDS--inputs h1{
+        margin-left: 200px;
+    }
+    .iDS--forms{
+        margin-left: 200px;
+    }
+    .ingresar{
+        margin-left: 230px;
+        font-size: 2rem;
+    }
+    .label-titulo{
+        font-size: 1.8rem;
+    }
+    .password{
+        font-size: 1.4rem;
+    }
+/* *************** Footer ******************* */
+    footer{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .footer--info{
+        font-size: 1.7rem;
+        color:var(--font);
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        width:100%;
+    }
+    .footer--redes p{
+        font-size: 1.8rem;
+        color:$font;
+        margin-bottom: 12px;
+    }
+
+    .footer--avisos p{
+        font-size: 1.8rem;
+        color:$font;
+        margin-top:30px;
+    }
+    .LogoSonoredOriginal{
+        display: flex;
+        max-width: 102px;
+        margin: 27px 68px 35px 150px;
+    }
 }

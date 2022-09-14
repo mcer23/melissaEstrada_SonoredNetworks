@@ -1,7 +1,0 @@
-//Map Get
-$title: (color:#0F4965, size:2rem, align:center);
-h1{
-    color: map-get($map:$title , $key:color);
-    font-size: map-get($map: $title, $key:size);
-    text-align: map-get($map: $title, $key:align );
-}
