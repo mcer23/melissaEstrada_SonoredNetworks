@@ -255,16 +255,25 @@ html{
     .main--forms{
         height: 300px;
     }
-    .contacto--forms {
+    .contacto--forms{
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: 25% 25% 25% 25%;
         margin-left: 12%;
     }
+    .contacto--forms label{
+        font-family: 'Roboto',sans-serif;
+        font-size: 1.2rem;
+        line-height: 21.09px;
+        font-weight: 400;
+        text-align: center;
+        color:$font;
+    }
     .contacto--forms-input{
         width:100%;
         min-width:100px;
         max-width: 228px;
+        height: 20px;
         font-family: 'Roboto',sans-serif;
         font-size: 1rem;
         border: 1px solid lightslategray;
