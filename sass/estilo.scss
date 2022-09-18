@@ -8,7 +8,6 @@
 html{
     background-color: $background;
     max-width: 320px;
-    /* height: 568px;     */
     display: grid;
     font-size: 62.5%;
     font-family: 'Roboto',sans-serif;
@@ -26,6 +25,10 @@ html{
         width:100%;
         min-width:10px;
         max-width: 40px;
+    }
+    .nav--item-icon{
+        display: flex;
+        justify-content: flex-end;
     }
     .header-menu-logo{
         width:100%;
@@ -55,7 +58,6 @@ html{
         position: absolute;
         background-color: $background;
     }
-
     .body-main--img img{
         width:320px;
         border-radius: none;
@@ -117,12 +119,11 @@ html{
         display: flex;
         flex-wrap: wrap;
         color:$font;
-        font-size:1rem;
+        font-size:120%;
         line-height: 11.72px;
         font-weight: 400;
         text-align: center;
     }
-
     /* ********** Planes ************ */
     h1{
         font-family: 'Roboto',sans-serif;
@@ -192,7 +193,6 @@ html{
         border: none;
         border-radius: 18px;
     }
-
     /* *********** Promociones ************ */
     .promo--contenedor{
         display: flex;
@@ -205,7 +205,6 @@ html{
         border-radius: 23px;
         margin-bottom: 10px;
         margin-left: 40px;
-
     }
     .promo--contenedor img{
         border-radius: 23px 23px 0 0;
@@ -258,15 +257,16 @@ html{
     .contacto--forms{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-rows: auto auto auto auto;
         margin-left: 12%;
     }
     .contacto--forms label{
+        display:block;
+        height: auto;
         font-family: 'Roboto',sans-serif;
         font-size: 1.2rem;
         line-height: 21.09px;
         font-weight: 400;
-        text-align: center;
         color:$font;
     }
     .contacto--forms-input{
@@ -329,7 +329,6 @@ html{
     .iDS--contra a{
         color:$font;
     }
-
     /* ****** Footer ******+ */
     footer{
         position: relative;
@@ -341,7 +340,6 @@ html{
         display: grid;
         background-color:$menu;
         grid-template-rows: auto auto;
-
     }
     .footer--info{
         margin-top: 8px;
@@ -361,8 +359,7 @@ html{
         margin-top: 3px;
         font-size: 1rem;
         line-height: 9.38px;
-        text-align: center;
-        
+        text-align: center;  
     }
     .footer--avisos a{
         color:$font;
@@ -397,12 +394,12 @@ html{
         color:$font;
     }
     a:hover{
+        color:$blueSonored;
         font-weight: 600;
     }
-
     /* ******** Index ************ */
     .index--main{
-        height: 600px;
+        height: 570px;
         background-color:$background;
     }
     .body-main-img-beneficios{
@@ -432,16 +429,14 @@ html{
         text-align: center;
         margin-bottom: 56px;
     }
-    .main--container-svg-plan p{
-        font-style: 1.6rem;
+    .main--container-svg-promo p{
+        font-style: 140%;
         line-height: 16.41px;
     }
-
     /* ***************** Planes ****************** */
     .main--planes{
         height: 487px;
     }
-
     .main-subtitle{
         margin-top: 10px;
         font-size: 1.8rem;
@@ -452,7 +447,6 @@ html{
         flex-direction: row;
         justify-content: space-evenly;
     }
-
     .planes--contenedor{
         height: 180px;
         margin-bottom: 50px;
