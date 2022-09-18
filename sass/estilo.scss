@@ -21,6 +21,14 @@ html{
         font-family: 'Roboto', sans-serif;
         font-weight: 1.8rem;
     }
+    .nav--link-text{
+        color:$font;
+        font-weight: 400;
+    }
+    a:hover{
+        color:$blueSonored;
+        font-weight: 600;
+    }
     .inicioDeSesion{
         width:100%;
         min-width:10px;
@@ -430,8 +438,9 @@ html{
         margin-bottom: 56px;
     }
     .main--container-svg-promo p{
-        font-style: 140%;
+        font-style: 1.2rem;
         line-height: 16.41px;
+        text-align: center;
     }
     /* ***************** Planes ****************** */
     .main--planes{
@@ -526,7 +535,7 @@ html{
     }
     .footer--info{
         font-size: 1.7rem;
-        color:var(--font);
+        color:$font;
         margin-bottom: 20px;
         margin-left: 20px;
         margin-top: 20px;
@@ -537,7 +546,6 @@ html{
         color:$font;
         margin-bottom: 12px;
     }
-
     .footer--avisos p{
         font-size: 1.8rem;
         color:$font;
