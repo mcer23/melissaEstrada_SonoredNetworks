@@ -123,6 +123,26 @@ html{
         justify-content: space-evenly;
         align-items: center;
     }
+    .main--container-svg-plan img{
+        display: block;
+        margin-bottom: 5px;
+        margin-left: 10px;
+   }
+   .main--container-svg-promo img{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    }
+    .main--container-svg-contact img{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    }
+    .main--container-svg-user img{
+        display: block;
+        margin-bottom: 5px;
+        margin-left: 28px;
+   }
     .body-main--contenedor-iconos p{
         display: flex;
         flex-wrap: wrap;
@@ -386,7 +406,234 @@ html{
         margin-left: 120px;
         margin-bottom: 10px;
     }
-@media (min-width:1024px){
+    /****************** TABLET ***************************/
+    @media (min-width:768px){
+        /* Index BODY */
+    body{
+        background-color: $background;
+    }
+    nav{
+        position: sticky;
+    }
+    h1{
+        font-size: 1.8rem;
+        line-height: 21px;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 2px;
+    }
+    /************ INDEX ****************/
+    .body-main-img-beneficios{
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+    .body-main--img img{
+        width:480px;
+        margin-left: 20%;
+        margin-top: 2%;
+    }
+    .body-main--columnLeft h1{
+        margin-left: 35%;
+    }
+    .body-main--beneficios ul{
+        color:$font;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        list-style: none;
+        width:100%;
+        min-width:174px;
+        height:39px ;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 14.06px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .body-main--contenedor h2{
+        color:$font;
+        display: flex;
+        width:100%;
+        min-width:174px;
+        height: 32px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 16.41px;
+        margin-left: 25%;
+        text-align: center;
+        justify-content: center;
+    }
+   .body-main--contenedor-iconos{
+        margin:8px;
+        display:grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        margin-left: 10%;
+   }
+   .main--container-svg-plan img{
+        display: block;
+        margin-bottom: 5px;
+        margin-left: 10px;
+   }
+   .main--container-svg-promo img{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    }
+    .main--container-svg-contact img{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    }
+    .main--container-svg-user img{
+        display: block;
+        margin-bottom: 5px;
+        margin-left: 28px;
+   }
+   .body-main--contenedor-iconos p{
+        display: inline;
+        color:$font;
+        font-size:1.4rem;
+        line-height: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+    /* ***************** Planes ****************** */
+    .main--planes{
+        height: 387px;
+    }
+    .main-subtitle{
+        margin-top: 10px;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    .planes--main-planes{
+        display: flex;
+        flex-direction: row;    
+    }
+    button:hover{
+        background-color: $font;
+    }
+    .planes--contenedor{
+        height: 180px;
+        margin-bottom: 50px;
+    }
+    .card-header{
+        font-size: 1.8rem;
+    }
+    .light{
+        font-size: 1.4rem;
+        line-height: 20px;
+    }
+    .bold{
+        font-size: 1.8rem;
+        line-height: 20px;
+    }
+    .contratar{
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: space-evenly;
+        margin-left:2px;
+        margin-top: 20px;
+    }
+    /************** Promo ******************/
+    .promo--desktop{
+        display: inline-block;
+    }
+    .promo--desktop-left{
+        margin-left: 5%;
+    }
+    .promo--desktop-right{
+        margin-left: 15%;
+    }
+    /* ************ Contacto ************** */
+    .main--forms{
+        height: 347px;
+    }
+    .contacto--extra{
+        font-size: 1.4rem;
+        line-height: 10px;
+    }
+    .contacto--forms{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        margin-left: 34%;
+    }
+    .contacto--forms label{
+        font-size: 1.4rem;
+        line-height: 20px;
+    }
+    .contacto--forms-input{
+        height: 24px;
+        font-size: 1.2rem;
+    }
+    .button--submit{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 9%;
+        font-size: 1.8rem;
+        line-height: 21.09px;
+    }
+    /* **************** Inicio de sesión *********************** */
+    .iDS--inputs{
+        height: 387px;
+        width:80%; 
+    }
+    .iDS--inputs h1{
+        margin-left: 20%;
+    }
+    .iDS--forms{
+        margin-left: 20%;
+    }
+    .label-titulo{
+        font-size: 1.4rem;
+    }
+    .password{
+        font-size: 1.4rem;
+    }
+    .ingresar{
+        margin-left: 35%;
+        font-size: 1.8rem;
+    }
+    /* *************** Footer ******************* */
+    footer{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .footer--info{
+        font-size: 1.4rem;
+        color:$font;
+        line-height: 19px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+        width:100%;
+    }
+    .footer--redes p{
+        font-size: 1.4rem;
+        color:$font;
+        margin-bottom: 12px;
+    }
+    .footer--avisos p{
+        font-size: 1.4rem;
+        color:$font;
+        line-height: 19px;
+        margin-top:10px;
+    }
+    .LogoSonoredOriginal{
+        display: flex;
+        max-width: 102px;
+        margin: 40px 68px 35px 150px;
+    }
+    }
+    /******************* DESKTOP ********************/
+    @media (min-width:1024px){
+    nav{
+        position: sticky;
+    }
     h1{
         margin-top: 10px;
         font-size: 2.8rem;
@@ -402,13 +649,12 @@ html{
         color:$font;
     }
     a:hover{
-        color:$blueSonored;
+        color:$font;
         font-weight: 600;
     }
     /* ******** Index ************ */
     .index--main{
-        height: 570px;
-        background-color:$background;
+        height: 431px;
     }
     .body-main-img-beneficios{
         display: grid;
@@ -424,27 +670,34 @@ html{
         width:426px;
         margin-top:75px;
         font-size: 2.8rem;
+        margin-left: 0;
     }
     .body-main--beneficios ul{
+        width:431px;
       font-size: 1.8rem;
-      margin-top:26px;
+      line-height: 22px;
+      margin-top: 25px;
       margin-bottom: 25px;
-      line-height: 21.09px;
     }
     .body-main--contenedor h2{
         font-size:2rem ;
         line-height: 28.13px;
         text-align: center;
         margin-bottom: 56px;
+        margin-left: 0;
     }
-    .main--container-svg-promo p{
-        font-style: 1.2rem;
+    .body-main--contenedor-iconos{
+        margin-left: 0;
+        margin-right: 23%;
+    }
+    .main--container-svg-plan p{
+        font-style: 1.6rem;
         line-height: 16.41px;
-        text-align: center;
+        
     }
     /* ***************** Planes ****************** */
     .main--planes{
-        height: 487px;
+        height: 431px;
     }
     .main-subtitle{
         margin-top: 10px;
@@ -455,6 +708,8 @@ html{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        margin-top: 5%;
+        margin-right: 7%;
     }
     .planes--contenedor{
         height: 180px;
@@ -477,39 +732,49 @@ html{
         justify-content: space-evenly;
         margin-left: 10px;
     }
+    button:hover{
+        background-color: $font;
+    }
 /* ****************** Promo ************************* */
-    /* En Footer utilice este proceso y funcionó */
-    /* .promo--desktop{
-        display: grid;
-        grid-template-columns: auto auto;
-    } */
-    /* En Planes utilice este proceso y funcionó */
+    .main--promo{
+        height: 431px;
+    }    
     .promo--desktop{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+    display: inline-block;
+    }
+    .promo--desktop-left{
+    margin-left: 20%;
+    }  
+    .promo--desktop-right{
+    margin-left: 15%;
     }
 
 /* *************** Contacto ************************ */
     .main--forms{
-        height: 487px;
+        height: 431px;
     }
     .contacto--extra{
         font-size: 1.8rem;
     }
     .contacto--forms{
-        margin-left: 400px;
+        margin-left: 40%;
+    }
+    .contacto--forms label{
+        font-size: 1.8rem;
+        line-height: 30px;
     }
     .contacto--forms-input{
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+        line-height: 30px;
     }
     .button--submit{
-        /* margin-left: 50px; */
-        font-size:2rem ;
+        margin-left: 7%;
+        font-size:2rem;
+        line-height: 30px;
     }
 /* **************** Inicio de sesión *********************** */
     .iDS--inputs{
-        height: 487px;
+        height: 431px;
         width:80%; 
     }
     .iDS--inputs h1{
@@ -518,15 +783,16 @@ html{
     .iDS--forms{
         margin-left: 200px;
     }
-    .ingresar{
-        margin-left: 230px;
-        font-size: 2rem;
-    }
+
     .label-titulo{
         font-size: 1.8rem;
     }
     .password{
         font-size: 1.4rem;
+    }
+    .ingresar{
+        margin-left: 41%;
+        font-size: 2rem;
     }
 /* *************** Footer ******************* */
     footer{
@@ -534,7 +800,7 @@ html{
         grid-template-columns: auto auto auto auto;
     }
     .footer--info{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         color:$font;
         margin-bottom: 20px;
         margin-left: 20px;
@@ -543,17 +809,17 @@ html{
     }
     .footer--redes p{
         font-size: 1.8rem;
-        color:$font;
         margin-bottom: 12px;
     }
     .footer--avisos p{
         font-size: 1.8rem;
         color:$font;
-        margin-top:30px;
+        margin-top:20px;
+        margin-bottom: 20px;
     }
     .LogoSonoredOriginal{
         display: flex;
-        max-width: 102px;
-        margin: 27px 68px 35px 150px;
+        max-width: 132px;
+        margin: 20% 0 0 80%;
     }
 }
