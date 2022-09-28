@@ -637,7 +637,7 @@ footer {
     line-height: 16.41px; }
   /* ***************** Planes ****************** */
   .main--planes {
-    height: 90%; }
+    height: 500px; }
   .main-subtitle {
     margin-top: 10px;
     font-size: 1.8rem;
@@ -668,7 +668,7 @@ footer {
     background-color: #0F4965; }
   /* ****************** Promo ************************* */
   .main--promo {
-    height: 90%; }
+    height: 500px; }
   .promo--desktop {
     display: inline-block; }
   .promo--desktop-left {
@@ -677,7 +677,7 @@ footer {
     margin-left: 15%; }
   /* *************** Contacto ************************ */
   .main--forms {
-    height: 90%; }
+    height: 500px; }
   .contacto--extra {
     font-size: 1.8rem; }
   .contacto--forms {
@@ -694,7 +694,7 @@ footer {
     line-height: 30px; }
   /* **************** Inicio de sesión *********************** */
   .iDS--inputs {
-    height: 90%;
+    height: 500px;
     width: 80%; }
   .iDS--inputs h1 {
     margin-left: 200px; }
