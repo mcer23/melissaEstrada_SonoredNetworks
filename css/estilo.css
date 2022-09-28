@@ -14,7 +14,7 @@ html {
 
 /* ************* MOBILE 320px ************* */
 nav {
-  position: sticky;
+  position: relative;
   width: 100%;
   background-color: #92DCFF;
   font-family: 'Roboto', sans-serif;
@@ -47,9 +47,7 @@ a:hover {
   font-size: 1.8rem;
   line-height: 1;
   background-color: transparent;
-  border: none;
-  /* border-radius: var(--bs-navbar-toggler-border-radius);
-        transition: var(--bs-navbar-toggler-transition); */ }
+  border: none; }
 
 .navbar-toggler-icon {
   display: inline-block;
@@ -402,7 +400,7 @@ footer {
   width: 100%;
   min-width: 60px;
   max-width: 102px;
-  margin-left: 120px;
+  margin-left: 110px;
   margin-bottom: 10px; }
 
 /****************** TABLET ***************************/
@@ -410,7 +408,7 @@ footer {
   /* Index BODY */
   body {
     background-color: #E4F7FF; }
-  nav {
+  header {
     position: sticky; }
   h1 {
     font-size: 1.8rem;
@@ -587,7 +585,7 @@ footer {
 
 /******************* DESKTOP ********************/
 @media (min-width: 1024px) {
-  nav {
+  header {
     position: sticky; }
   h1 {
     margin-top: 10px;
@@ -605,7 +603,7 @@ footer {
     font-weight: 600; }
   /* ******** Index ************ */
   .index--main {
-    height: 431px; }
+    height: 90%; }
   .body-main-img-beneficios {
     display: grid;
     grid-template-columns: auto auto;
@@ -639,7 +637,7 @@ footer {
     line-height: 16.41px; }
   /* ***************** Planes ****************** */
   .main--planes {
-    height: 431px; }
+    height: 90%; }
   .main-subtitle {
     margin-top: 10px;
     font-size: 1.8rem;
@@ -670,7 +668,7 @@ footer {
     background-color: #0F4965; }
   /* ****************** Promo ************************* */
   .main--promo {
-    height: 431px; }
+    height: 90%; }
   .promo--desktop {
     display: inline-block; }
   .promo--desktop-left {
@@ -679,7 +677,7 @@ footer {
     margin-left: 15%; }
   /* *************** Contacto ************************ */
   .main--forms {
-    height: 431px; }
+    height: 90%; }
   .contacto--extra {
     font-size: 1.8rem; }
   .contacto--forms {
@@ -696,7 +694,7 @@ footer {
     line-height: 30px; }
   /* **************** Inicio de sesión *********************** */
   .iDS--inputs {
-    height: 431px;
+    height: 90%;
     width: 80%; }
   .iDS--inputs h1 {
     margin-left: 200px; }
@@ -712,7 +710,8 @@ footer {
   /* *************** Footer ******************* */
   footer {
     display: grid;
-    grid-template-columns: auto auto auto auto; }
+    grid-template-columns: auto auto auto auto;
+    bottom: 0; }
   .footer--info {
     font-size: 1.8rem;
     color: #0F4965;
